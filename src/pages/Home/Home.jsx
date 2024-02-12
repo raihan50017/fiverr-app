@@ -10,7 +10,7 @@ function Home() {
       }}
     >
       <Grid container spacing={2}>
-        <Grid item md={9}>
+        <Grid item xs={12} md={9}>
           <Box
             sx={{
               color: "white",
@@ -28,7 +28,11 @@ function Home() {
               At Achieve, it’s not what we stand for, it’s who we stand for.
             </Typography>
             <Button
-              sx={{ mt: "30px", width: { xs: "90%", md: "50%" } }}
+              sx={{
+                mt: "30px",
+                width: { xs: "90%", md: "50%" },
+                backgroundColor: "#3300FF",
+              }}
               variant="contained"
             >
               See personal offer
@@ -47,22 +51,26 @@ function Home() {
             </Button>
           </Box>
         </Grid>
-        <Grid item md={3}>
+        <Grid item xs={12} md={3}>
           <Box
             sx={{
               height: "100%",
               display: "flex",
               justifyContent: "space-between",
               flexDirection: "column",
-              pl: { xs: "10px", md: "0px" },
-              pr: { xs: "10px", md: "0px" },
+              textAlign: "center",
+              pl: { xs: "30%", md: "0px" },
+              pr: { xs: "30%", md: "0px" },
             }}
           >
+            <Box></Box>
             <img
               style={{
                 width: "100%",
                 transform: "scaleX(-1)",
                 marginTop: "auto",
+                marginLeft: "auto",
+                marginRight: "auto",
               }}
               src="images/lady-image.png"
             ></img>
