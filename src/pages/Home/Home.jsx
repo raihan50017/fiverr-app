@@ -30,8 +30,9 @@ function Home() {
             <Button
               sx={{
                 mt: "30px",
-                width: { xs: "90%", md: "50%" },
+                width: { xs: "90%", sm: "50%", md: "50%" },
                 backgroundColor: "#3300FF",
+                textTransform: "capitalize",
               }}
               variant="contained"
             >
@@ -43,7 +44,8 @@ function Home() {
                 mt: "20px",
                 color: "white",
                 borderColor: "white",
-                width: { xs: "90%", md: "50%" },
+                width: { xs: "90%", sm: "50%", md: "50%" },
+                textTransform: "capitalize",
               }}
               variant="outlined"
             >
