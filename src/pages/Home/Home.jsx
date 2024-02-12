@@ -5,8 +5,8 @@ function Home() {
     <Box
       sx={{
         backgroundColor: "#0F3552",
-        pl: { xs: "30px", sm: "50px", md: "90px", lg: "170px" },
-        pr: { xs: "30px", sm: "50px", md: "80px", lg: "170px" },
+        pl: { xs: "30px", sm: "50px", md: "90px", lg: "180px" },
+        pr: { xs: "30px", sm: "50px", md: "80px", lg: "180px" },
       }}
     >
       <Grid container spacing={2}>
