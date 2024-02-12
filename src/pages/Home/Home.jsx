@@ -5,18 +5,18 @@ function Home() {
     <Box
       sx={{
         backgroundColor: "#0F3552",
-        pl: { xs: "30px", sm: "50px", md: "90px", lg: "150px" },
-        pr: { xs: "30px", sm: "50px", md: "80px", lg: "130px" },
+        pl: { xs: "30px", sm: "50px", md: "90px", lg: "170px" },
+        pr: { xs: "30px", sm: "50px", md: "80px", lg: "170px" },
       }}
     >
       <Grid container spacing={2}>
-        <Grid item xs={12} sm={12} md={8} lg={8}>
+        <Grid item xs={12} lg={8}>
           <Box
             sx={{
               color: "white",
-              pt: { xs: "50px", sm: "50px", md: "100px" },
-              pb: { sx: "50px", sm: "50px", md: "100px" },
-              textAlign: { xs: "center", md: "left" },
+              pt: { xs: "50px", lg: "100px" },
+              pb: { sx: "20px", lg: "100px" },
+              textAlign: { xs: "center", lg: "left" },
             }}
           >
             <Typography
@@ -53,29 +53,28 @@ function Home() {
             </Button>
           </Box>
         </Grid>
-        <Grid item xs={12} sm={12} md={4} lg={4}>
+        <Grid item xs={12} lg={4}>
           <Box
             sx={{
+              position: "relative",
               height: "100%",
-              display: "flex",
-              justifyContent: "space-between",
-              flexDirection: "column",
-              textAlign: "center",
-              pl: { xs: "20%", sm: "30%", md: "10%", lg: "20%" },
-              pr: { xs: "20%", sm: "30%", md: "10%", lg: "20%" },
+              boxSizing: "border-box",
+              minHeight: "250px",
             }}
           >
-            <Box></Box>
             <img
               style={{
-                width: "100%",
-                transform: "scaleX(-1)",
-                marginTop: "auto",
-                marginLeft: "auto",
-                marginRight: "auto",
+                position: "absolute",
+                bottom: "0",
+                left: "50%",
+                transform: "translateX(-50%) scaleX(-1)",
+                maxWidth: "100%",
+                maxHeight: "260px",
+                objectFit: "contain",
               }}
               src="images/lady-image.png"
-            ></img>
+              alt="Lady Image"
+            />
           </Box>
         </Grid>
       </Grid>
